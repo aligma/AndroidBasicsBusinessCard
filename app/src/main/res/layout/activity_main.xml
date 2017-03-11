@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.aligma.businesscard.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="Young Pocha"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delicious Korean food"
+            android:textStyle="italic"
+            android:layout_marginBottom="8dp"
+            />
+
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="We are open from 5pm to 1pm, 7 days a week"
+            />
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For bookings, call 0449 530 137"
+            android:layout_marginBottom="8dp"
+            />
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Find us on the first floor at 378 Pitt St, Sydney" />
+
+
+        <ImageView
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:src="@drawable/map"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="0dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/photo_caption"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="italic"
+        android:text="Jokbal made fresh in our kitchen every day" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:src="@drawable/jokbal"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="0dp"
+        android:layout_above="@id/photo_caption"
+        />
+
+
+
+
+    <!--
+
+    Contact information  0449 530 137
+    Address  378 Pitt St, Sydney NSW 2000
+    Description Delicious Korean food
+    Hours 5pm til 1am Monday to Sunday
+    -->
+
+</RelativeLayout>
